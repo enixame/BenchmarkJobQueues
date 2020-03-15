@@ -13,7 +13,7 @@ namespace BenchMarkQueue
         [Params(1000)]
         public int JobCounts;
 
-        [Params(1, 100, 1000, 10000)]
+        [Params(1, 10, 100, 1000)]
         public int CpuOperationsPerJob;
 
         public MediumExecutionTimeDispatcherQueueBenchmark()
