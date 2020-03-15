@@ -35,6 +35,21 @@ Intel Core i5-6600K CPU 3.50GHz (Skylake), 1 CPU, 4 logical and 4 physical cores
   
   Allocated           : Allocated memory per single operation (managed only, inclusive, 1KB = 1024B) 
   
+# Implementations
+
+ChannelQueue: based on System.Threading.Channels
+
+TPLDataflowQueue: based on System.Threading.Tasks.Dataflow
+
+ReactiveExtensionsQueue: based on System.Reactive
+
+NoDedicatedThreadQueue: Ordered Execution With ThreadPool using a simple queue and locks
+
+SwapChainNoDedicatedThreadQueue: Optimisation of NoDedicatedThreadQueue using swap queues. Optimised for fast execution jobs. 
+
+BlockingCollectionDedicatedThreadQueue: A dedicated thread with BlockingCollection.
+
+ReactiveExtensionsWithBlockingCollectionQueue: An observable BlockingCollection.
 
 # Very short execution time
 
