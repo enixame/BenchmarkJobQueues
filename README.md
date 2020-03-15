@@ -66,7 +66,7 @@ ReactiveExtensionsWithBlockingCollectionQueue: An observable BlockingCollection.
 |        BlockingCollectionDedicatedThreadQueue |    100000 |                   1 | 26.393 ms | 0.4731 ms | 0.3951 ms | 26.006 ms | 27.202 ms |    6 | 1281.2500 | 625.0000 |        - |   7.33 MB |
 | ReactiveExtensionsWithBlockingCollectionQueue |    100000 |                   1 | 28.398 ms | 0.4278 ms | 0.3340 ms | 27.789 ms | 29.030 ms |    7 | 1250.0000 | 625.0000 |        - |   7.33 MB |
 
-# Medium execution time
+# Average execution time
 
 1 us                : 1 Microsecond (0.000001 sec)
 
