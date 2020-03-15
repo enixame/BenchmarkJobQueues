@@ -70,22 +70,29 @@ ReactiveExtensionsWithBlockingCollectionQueue: An observable BlockingCollection.
 
 1 us                : 1 Microsecond (0.000001 sec)
 
-|                                        Method | JobCounts | CpuOperationsPerJob |        Mean |       Error |      StdDev |      Median |         Min |         Max | Rank |   Gen 0 | Gen 1 | Gen 2 | Allocated |
-|---------------------------------------------- |---------- |-------------------- |------------:|------------:|------------:|------------:|------------:|------------:|-----:|--------:|------:|------:|----------:|
-|               SwapChainNoDedicatedThreadQueue |      1000 |                   1 |    103.5 us |     2.01 us |     1.88 us |    104.0 us |    101.2 us |    106.8 us |    1 | 27.0996 |     - |     - |  83.39 KB |
-|                                  ChannelQueue |      1000 |                   1 |    104.5 us |     0.74 us |     0.69 us |    104.6 us |    103.3 us |    105.4 us |    1 | 24.4141 |     - |     - |  75.15 KB |
-|                              TPLDataflowQueue |      1000 |                   1 |    107.8 us |     0.40 us |     0.38 us |    107.8 us |    107.2 us |    108.5 us |    2 | 24.1699 |     - |     - |  74.49 KB |
-|                        NoDedicatedThreadQueue |      1000 |                   1 |    136.4 us |     2.04 us |     1.90 us |    136.2 us |    133.3 us |    140.0 us |    3 | 25.3906 |     - |     - |  78.74 KB |
-|                       ReactiveExtensionsQueue |      1000 |                   1 |    310.2 us |     9.02 us |    23.75 us |    306.1 us |    280.8 us |    421.0 us |    4 | 24.4141 |     - |     - |  75.99 KB |
-|        BlockingCollectionDedicatedThreadQueue |      1000 |                   1 |    462.0 us |    18.23 us |    49.58 us |    441.7 us |    412.3 us |    607.9 us |    5 | 27.3438 |     - |     - |  84.18 KB |
-| ReactiveExtensionsWithBlockingCollectionQueue |      1000 |                   1 |    505.7 us |    30.76 us |    83.68 us |    471.5 us |    439.5 us |    830.0 us |    6 | 27.3438 |     - |     - |  84.46 KB |
-|                                  ChannelQueue |      1000 |                 100 |    576.9 us |     7.04 us |     6.24 us |    576.4 us |    566.5 us |    591.5 us |    7 | 26.3672 |     - |     - |  82.71 KB |
-|                              TPLDataflowQueue |      1000 |                 100 |    590.9 us |    11.80 us |    13.59 us |    588.0 us |    577.2 us |    624.4 us |    7 | 31.2500 |     - |     - |  97.53 KB |
-|               SwapChainNoDedicatedThreadQueue |      1000 |                 100 |    593.6 us |    11.69 us |    18.21 us |    594.5 us |    570.8 us |    624.7 us |    7 | 26.3672 |     - |     - |   82.1 KB |
-|                        NoDedicatedThreadQueue |      1000 |                 100 |    648.9 us |    12.63 us |    18.11 us |    651.6 us |    618.7 us |    675.5 us |    8 | 25.3906 |     - |     - |  78.84 KB |
-|                       ReactiveExtensionsQueue |      1000 |                 100 |    804.5 us |    15.98 us |    24.41 us |    802.7 us |    774.8 us |    888.6 us |    9 | 24.4141 |     - |     - |     76 KB |
-| ReactiveExtensionsWithBlockingCollectionQueue |      1000 |                 100 |    905.1 us |    17.11 us |    18.31 us |    907.8 us |    853.7 us |    929.8 us |   10 | 27.3438 |     - |     - |  84.46 KB |
-|        BlockingCollectionDedicatedThreadQueue |      1000 |                 100 |    916.2 us |    17.13 us |    17.59 us |    916.3 us |    887.1 us |    942.7 us |   10 | 27.3438 |     - |     - |  84.16 KB |
+|                                        Method | JobCounts | CpuOperationsPerJob |        Mean |      Error |     StdDev |      Median |         Min |         Max | Rank |   Gen 0 | Gen 1 | Gen 2 | Allocated |
+|---------------------------------------------- |---------- |-------------------- |------------:|-----------:|-----------:|------------:|------------:|------------:|-----:|--------:|------:|------:|----------:|
+|               SwapChainNoDedicatedThreadQueue |      1000 |                   1 |    96.27 us |   0.490 us |   0.435 us |    96.32 us |    95.69 us |    97.19 us |    1 | 27.0996 |     - |     - |  83.55 KB |
+|                                  ChannelQueue |      1000 |                   1 |   102.52 us |   0.928 us |   0.868 us |   102.58 us |   101.00 us |   103.70 us |    2 | 24.4141 |     - |     - |  75.09 KB |
+|                              TPLDataflowQueue |      1000 |                   1 |   106.24 us |   0.326 us |   0.289 us |   106.20 us |   105.81 us |   106.90 us |    3 | 26.2451 |     - |     - |  80.83 KB |
+|                        NoDedicatedThreadQueue |      1000 |                   1 |   134.71 us |   2.330 us |   2.179 us |   133.84 us |   132.07 us |   139.73 us |    4 | 25.6348 |     - |     - |  78.78 KB |
+|                       ReactiveExtensionsQueue |      1000 |                   1 |   282.99 us |   5.394 us |   6.624 us |   281.83 us |   272.03 us |   300.36 us |    5 | 24.4141 |     - |     - |  75.99 KB |
+|        BlockingCollectionDedicatedThreadQueue |      1000 |                   1 |   415.61 us |   7.763 us |   6.882 us |   416.34 us |   401.93 us |   425.16 us |    6 | 27.3438 |     - |     - |  84.17 KB |
+| ReactiveExtensionsWithBlockingCollectionQueue |      1000 |                   1 |   449.43 us |   8.962 us |  22.320 us |   440.76 us |   423.42 us |   512.20 us |    7 | 27.3438 |     - |     - |  84.46 KB |
+|                              TPLDataflowQueue |      1000 |                 100 |   555.06 us |  10.827 us |  12.468 us |   550.56 us |   537.80 us |   578.66 us |    8 | 31.2500 |     - |     - |  97.38 KB |
+|               SwapChainNoDedicatedThreadQueue |      1000 |                 100 |   570.30 us |  11.284 us |  15.446 us |   572.01 us |   530.55 us |   593.24 us |    9 | 26.3672 |     - |     - |  82.33 KB |
+|                                  ChannelQueue |      1000 |                 100 |   590.49 us |  11.656 us |  14.314 us |   589.73 us |   570.23 us |   611.84 us |   10 | 26.3672 |     - |     - |  82.58 KB |
+|                        NoDedicatedThreadQueue |      1000 |                 100 |   665.45 us |  13.121 us |  14.040 us |   668.28 us |   631.17 us |   682.19 us |   11 | 25.3906 |     - |     - |  78.84 KB |
+|                       ReactiveExtensionsQueue |      1000 |                 100 |   901.91 us |  41.280 us | 115.071 us |   858.31 us |   759.74 us | 1,257.33 us |   12 | 24.4141 |     - |     - |     76 KB |
+|        BlockingCollectionDedicatedThreadQueue |      1000 |                 100 |   929.28 us |  16.967 us |  15.041 us |   929.29 us |   901.76 us |   955.18 us |   13 | 27.3438 |     - |     - |  84.16 KB |
+| ReactiveExtensionsWithBlockingCollectionQueue |      1000 |                 100 |   982.58 us |  19.568 us |  53.568 us |   970.09 us |   894.30 us | 1,147.24 us |   14 | 27.3438 |     - |     - |  84.47 KB |
+|                              TPLDataflowQueue |      1000 |                1000 | 5,355.35 us |  73.366 us |  68.626 us | 5,365.08 us | 5,230.48 us | 5,466.48 us |   15 | 31.2500 |     - |     - |   97.4 KB |
+|                                  ChannelQueue |      1000 |                1000 | 5,393.43 us |  88.710 us |  82.979 us | 5,391.49 us | 5,254.76 us | 5,532.75 us |   15 | 23.4375 |     - |     - |  82.84 KB |
+|                        NoDedicatedThreadQueue |      1000 |                1000 | 5,412.08 us |  43.033 us |  40.253 us | 5,413.06 us | 5,342.71 us | 5,491.37 us |   15 | 23.4375 |     - |     - |  78.88 KB |
+|               SwapChainNoDedicatedThreadQueue |      1000 |                1000 | 5,612.93 us |  46.929 us |  43.897 us | 5,611.02 us | 5,511.76 us | 5,691.02 us |   16 | 23.4375 |     - |     - |  81.27 KB |
+|                       ReactiveExtensionsQueue |      1000 |                1000 | 5,945.10 us |  86.625 us |  76.791 us | 5,948.73 us | 5,815.62 us | 6,103.42 us |   17 | 23.4375 |     - |     - |     76 KB |
+|        BlockingCollectionDedicatedThreadQueue |      1000 |                1000 | 5,989.46 us |  77.100 us |  68.347 us | 5,980.29 us | 5,870.88 us | 6,126.24 us |   17 | 23.4375 |     - |     - |  84.13 KB |
+| ReactiveExtensionsWithBlockingCollectionQueue |      1000 |                1000 | 6,003.77 us | 116.258 us | 129.220 us | 5,979.89 us | 5,848.82 us | 6,245.12 us |   17 | 23.4375 |     - |     - |   84.5 KB |
 |                                  ChannelQueue |      1000 |               10000 | 51,422.1 us |   521.79 us |   488.08 us | 51,290.8 us | 50,710.8 us | 52,233.3 us |   11 |       - |     - |     - |  86.45 KB |
 |                       ReactiveExtensionsQueue |      1000 |               10000 | 53,388.8 us |   588.59 us |   459.53 us | 53,447.8 us | 52,607.4 us | 54,037.0 us |   12 |       - |     - |     - |     76 KB |
 |                        NoDedicatedThreadQueue |      1000 |               10000 | 53,934.4 us |   648.91 us |   606.99 us | 53,828.0 us | 52,914.8 us | 55,019.7 us |   12 |       - |     - |     - |  79.25 KB |
