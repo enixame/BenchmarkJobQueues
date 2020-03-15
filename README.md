@@ -7,12 +7,11 @@ BenchmarkDotNet=v0.12.0, OS=Windows 10.0.18362
 Intel Core i5-6600K CPU 3.50GHz (Skylake), 1 CPU, 4 logical and 4 physical cores
 
   [Host]     : .NET Framework 4.8 (4.8.4121.0), X64 RyuJIT
-  
   Job-AQUCUT : .NET Framework 4.8 (4.8.4121.0), X64 RyuJIT
 
 # Legend
 
-  JobCounts           : Value of the 'JobCounts' parameter
+  JobCounts           : Value of the 'JobCounts' parameter 
   
   CpuOperationsPerJob : Value of the 'CpuOperationsPerJob' parameter
   
@@ -20,13 +19,13 @@ Intel Core i5-6600K CPU 3.50GHz (Skylake), 1 CPU, 4 logical and 4 physical cores
   
   Error               : Half of 99.9% confidence interval
   
-  StdDev              : Standard deviation of all measurements
+  StdDev              : Standard deviation of all measurements 
   
-  Min                 : Minimum
+  Min                 : Minimum 
   
-  Max                 : Maximum
+  Max                 : Maximum 
   
-  Rank                : Relative position of current benchmark mean among all benchmarks (Arabic style)
+  Rank                : Relative position of current benchmark mean among all benchmarks (Arabic style)  
   
   Gen 0               : GC Generation 0 collects per 1000 operations
   
@@ -34,7 +33,7 @@ Intel Core i5-6600K CPU 3.50GHz (Skylake), 1 CPU, 4 logical and 4 physical cores
   
   Gen 2               : GC Generation 2 collects per 1000 operations
   
-  Allocated           : Allocated memory per single operation (managed only, inclusive, 1KB = 1024B)
+  Allocated           : Allocated memory per single operation (managed only, inclusive, 1KB = 1024B) 
   
   1 ms                : 1 Millisecond (0.001 sec)
 
