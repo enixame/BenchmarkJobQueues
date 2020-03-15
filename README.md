@@ -35,9 +35,11 @@ Intel Core i5-6600K CPU 3.50GHz (Skylake), 1 CPU, 4 logical and 4 physical cores
   
   Allocated           : Allocated memory per single operation (managed only, inclusive, 1KB = 1024B) 
   
-  1 ms                : 1 Millisecond (0.001 sec)
 
 # Very short execution time
+
+ 1 ms                : 1 Millisecond (0.001 sec)
+
 
 |                                        Method | JobCounts | CpuOperationsPerJob |      Mean |     Error |    StdDev |       Min |       Max | Rank |     Gen 0 |    Gen 1 |    Gen 2 | Allocated |
 |---------------------------------------------- |---------- |-------------------- |----------:|----------:|----------:|----------:|----------:|-----:|----------:|---------:|---------:|----------:|
@@ -50,6 +52,9 @@ Intel Core i5-6600K CPU 3.50GHz (Skylake), 1 CPU, 4 logical and 4 physical cores
 | ReactiveExtensionsWithBlockingCollectionQueue |    100000 |                   1 | 28.398 ms | 0.4278 ms | 0.3340 ms | 27.789 ms | 29.030 ms |    7 | 1250.0000 | 625.0000 |        - |   7.33 MB |
 
 # Medium execution time
+
+1 us                : 1 Microsecond (0.000001 sec)
+
 |                                        Method | JobCounts | CpuOperationsPerJob |        Mean |       Error |      StdDev |      Median |         Min |         Max | Rank |   Gen 0 | Gen 1 | Gen 2 | Allocated |
 |---------------------------------------------- |---------- |-------------------- |------------:|------------:|------------:|------------:|------------:|------------:|-----:|--------:|------:|------:|----------:|
 |               SwapChainNoDedicatedThreadQueue |      1000 |                   1 |    103.5 us |     2.01 us |     1.88 us |    104.0 us |    101.2 us |    106.8 us |    1 | 27.0996 |     - |     - |  83.39 KB |
